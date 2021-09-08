@@ -1,0 +1,9 @@
+0000000000000000000000000000000000000000 23417e11373a8e9871612551fdba7ac1e45558cf Michał Michaluk <michaluk.michal@gmail.com> 1477114930 +0200	clone: from git@github.com:michal-michaluk/java-workshops.git
+23417e11373a8e9871612551fdba7ac1e45558cf 3f95c4478e11fa7a30242569d1ffaa22efd5a407 Michał Michaluk <michaluk.michal@gmail.com> 1477115466 +0200	commit: init of beginner and intermediate
+3f95c4478e11fa7a30242569d1ffaa22efd5a407 7cca4a754f0c3611887c99e2bfad4074c9b0ebfb Michał Michaluk <michaluk.michal@gmail.com> 1477203481 +0200	commit: before second day of training
+7cca4a754f0c3611887c99e2bfad4074c9b0ebfb 7b530dbd0f1e7519a5dbdbe6d26a3259aa7d6a7f Michał Michaluk <michaluk.michal@gmail.com> 1478118153 +0100	commit: after second day of training
+7b530dbd0f1e7519a5dbdbe6d26a3259aa7d6a7f faf778493b9a7acfd9d5acf0108cb4ae88db4e79 Michał Michaluk <michaluk.michal@gmail.com> 1478118179 +0100	commit (amend): after second day of training
+faf778493b9a7acfd9d5acf0108cb4ae88db4e79 f80bc5332ce6c51c9b1d55720897eac1de637d69 Michał Michaluk <michaluk.michal@gmail.com> 1484375334 +0100	commit: time based test error fixed
+f80bc5332ce6c51c9b1d55720897eac1de637d69 068eda8ada44fb3fdfff3a1ed866825ec845ebd7 Michał Michaluk <michaluk.michal@gmail.com> 1484377089 +0100	commit: java advanced exercises for first day
+068eda8ada44fb3fdfff3a1ed866825ec845ebd7 7bb906babcc92ef4cc25b5635380da4abfcc03ef Michał Michaluk <michaluk.michal@gmail.com> 1484377250 +0100	commit (amend): java advanced exercises for first day
+7bb906babcc92ef4cc25b5635380da4abfcc03ef dea40a600fcb9cc3ed46489f8ff880746ee316be Michał Michaluk <michaluk.michal@gmail.com> 1484382237 +0100	commit: future dep. removed
