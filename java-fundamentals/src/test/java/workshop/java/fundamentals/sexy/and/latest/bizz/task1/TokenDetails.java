@@ -84,7 +84,7 @@ public abstract class TokenDetails {
             return rfid;
         }
 
-        public String getNumber() {
+        public String getSeries() {
             return series;
         }
 

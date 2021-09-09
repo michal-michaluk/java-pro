@@ -22,12 +22,12 @@ public class SwitchStatement {
 
     private String switchExpressionWithPatternMatching(Object obj) {
         return switch (obj) {
-            case null  -> "null";
+            case null -> "null";
             case Integer i -> String.format("int %d", i);
             case Byte b -> String.format("byte %d", b);
             case Long l -> String.format("long %d", l);
             case Double d -> String.format("double %f", d);
-            case String s && !s.isEmpty()-> String.format("String %s", s);
+            case String s && !s.isEmpty() -> String.format("String %s", s);
             case String s -> "empty String";
             default -> String.format("Object %s", obj);
         };

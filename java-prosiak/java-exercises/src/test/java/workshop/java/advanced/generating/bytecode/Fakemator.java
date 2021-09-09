@@ -9,8 +9,8 @@ import net.bytebuddy.implementation.bind.annotation.RuntimeType;
 import net.bytebuddy.implementation.bind.annotation.SuperCall;
 import net.bytebuddy.matcher.ElementMatchers;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
-import java.util.Arrays;
 import java.util.concurrent.Callable;
 
 public class Fakemator {
@@ -24,8 +24,8 @@ public class Fakemator {
                 .load(Fakemator.class.getClassLoader())
                 .getLoaded();
         try {
-            return fakeClass.newInstance();
-        } catch (InstantiationException | IllegalAccessException e) {
+            return fakeClass.getConstructor().newInstance();
+        } catch (InstantiationException | IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
             throw new RuntimeException(e);
         }
     }
