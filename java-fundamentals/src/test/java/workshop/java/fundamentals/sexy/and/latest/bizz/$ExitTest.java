@@ -38,6 +38,8 @@ public class $ExitTest {
     // into workshop.java.fundamentals.sexy.and.latest.bizz.task3
     // implement mapping into TokenSnapshotV1 inside method TokenSnapshotV1.from(Token)
     // but use switch pattern matching inside
+    // in addition
+    // change TokenDetails into sealed interface and all implementation into records
 
     // discussion:
     // Which variant is better, what do you prefer?

@@ -1,7 +1,5 @@
 package workshop.java.fundamentals.sexy.and.latest.bizz.task2;
 
-import org.jetbrains.annotations.NotNull;
-
 public record TokenSnapshotV1(String tokenId, DetailsV1 details, StatusV1 status) {
 
     public static TokenSnapshotV1 from(Token token) {
@@ -12,55 +10,15 @@ public record TokenSnapshotV1(String tokenId, DetailsV1 details, StatusV1 status
         );
     }
 
-    static record DetailsV1(String type, String rfid, String number, String series, String modemId) {
-        public static DetailsV1 from(TokenDetails details) {
-            return switch (details) {
-                case TokenDetails.Card card -> toCard(card);
-                case TokenDetails.Keychain card -> toKeychain(card);
-                case TokenDetails.Car card -> toCar(card);
-                case TokenDetails.Virtual virtual -> toVirtual(virtual);
-            };
-        }
+    record DetailsV1(String type, String rfid, String number, String series, String modemId) {
 
-        @NotNull
-        private static TokenSnapshotV1.DetailsV1 toCard(TokenDetails.Card card) {
+        public static DetailsV1 from(TokenDetails details) {
+            // TODO: implement all cases
+            TokenDetails.Card card = (TokenDetails.Card) details;
             return new DetailsV1(
                     "CARD",
-                    card.rfid(),
-                    card.number(),
-                    null,
-                    null
-            );
-        }
-
-        @NotNull
-        private static TokenSnapshotV1.DetailsV1 toKeychain(TokenDetails.Keychain card) {
-            return new DetailsV1(
-                    "KEYCHAIN",
-                    card.rfid(),
-                    null,
-                    card.series(),
-                    null
-            );
-        }
-
-        @NotNull
-        private static TokenSnapshotV1.DetailsV1 toCar(TokenDetails.Car card) {
-            return new DetailsV1(
-                    "CAR",
-                    null,
-                    null,
-                    null,
-                    card.modemId()
-            );
-        }
-
-        @NotNull
-        private static TokenSnapshotV1.DetailsV1 toVirtual(TokenDetails.Virtual virtual) {
-            return new DetailsV1(
-                    "VIRTUAL",
-                    virtual.rfid(),
-                    null,
+                    card.getRfid(),
+                    card.getNumber(),
                     null,
                     null
             );

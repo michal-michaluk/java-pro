@@ -11,6 +11,7 @@ public class Token {
     public Token(String tokenId, TokenDetails details, boolean active) {
         this.tokenId = tokenId;
         this.details = details;
+        this.active = active;
     }
 
     public String getTokenId() {
@@ -28,8 +29,9 @@ public class Token {
     public TokenSnapshotV1 toSnapshot() {
         return new TokenSnapshotV1(
                 tokenId,
+                // TODO: fill details
                 null,
-                StatusV1.from(this)
+                active ? StatusV1.VALID : StatusV1.INVALID
         );
     }
 }

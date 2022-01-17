@@ -9,6 +9,7 @@ public class Token {
     public Token(String tokenId, TokenDetails details, boolean active) {
         this.tokenId = tokenId;
         this.details = details;
+        this.active = active;
     }
 
     public String getTokenId() {
