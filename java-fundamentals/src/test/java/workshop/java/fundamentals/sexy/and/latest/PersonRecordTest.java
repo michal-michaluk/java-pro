@@ -108,7 +108,7 @@ public class PersonRecordTest {
         record LocalRecord(String important, String dummy, Within s, Within.Inner i) {
             private static final LocalRecord EMPTY = new LocalRecord("", "", new Within(), new Within.Inner());
 
-            //String nonFinalMember = "not allowed;
+            //String nonStaticMember = "not allowed;
 
             static LocalRecord empty() {
                 return EMPTY;

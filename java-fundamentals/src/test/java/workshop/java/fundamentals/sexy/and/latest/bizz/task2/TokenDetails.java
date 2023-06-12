@@ -68,7 +68,7 @@ public abstract class TokenDetails {
             return rfid;
         }
 
-        public String getNumber() {
+        public String getSeries() {
             return series;
         }
 
@@ -87,10 +87,10 @@ public abstract class TokenDetails {
 
         @Override
         public String toString() {
-            return "Card{" +
-                    "rfid='" + rfid + '\'' +
-                    ", series='" + series + '\'' +
-                    '}';
+            return "Keychain{" +
+                   "rfid='" + rfid + '\'' +
+                   ", series='" + series + '\'' +
+                   '}';
         }
     }
 

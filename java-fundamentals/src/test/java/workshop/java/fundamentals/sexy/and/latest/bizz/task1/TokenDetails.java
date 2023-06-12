@@ -24,8 +24,6 @@ public abstract class TokenDetails {
         private final String number;
 
         public Card(String rfid, String number) {
-            Objects.requireNonNull(rfid);
-            Objects.requireNonNull(number);
             this.rfid = rfid;
             this.number = number;
         }
@@ -74,8 +72,6 @@ public abstract class TokenDetails {
         private final String series;
 
         public Keychain(String rfid, String series) {
-            Objects.requireNonNull(rfid);
-            Objects.requireNonNull(series);
             this.rfid = rfid;
             this.series = series;
         }
@@ -103,10 +99,10 @@ public abstract class TokenDetails {
 
         @Override
         public String toString() {
-            return "Card{" +
-                    "rfid='" + rfid + '\'' +
-                    ", series='" + series + '\'' +
-                    '}';
+            return "Keychain{" +
+                   "rfid='" + rfid + '\'' +
+                   ", series='" + series + '\'' +
+                   '}';
         }
     }
 
@@ -115,8 +111,6 @@ public abstract class TokenDetails {
         private final String certificate;
 
         public Car(String modemId, String certificate) {
-            Objects.requireNonNull(modemId);
-            Objects.requireNonNull(certificate);
             this.modemId = modemId;
             this.certificate = certificate;
         }
