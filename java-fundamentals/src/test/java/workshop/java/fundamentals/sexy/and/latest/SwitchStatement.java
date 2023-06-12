@@ -27,7 +27,7 @@ public class SwitchStatement {
             case Byte b -> String.format("byte %d", b);
             case Long l -> String.format("long %d", l);
             case Double d -> String.format("double %f", d);
-            case String s && !s.isEmpty() -> String.format("String %s", s);
+            case String s when !s.isEmpty() -> String.format("String %s", s);
             case String s -> "empty String";
             default -> String.format("Object %s", obj);
         };
@@ -65,4 +65,25 @@ public class SwitchStatement {
         Assertions.assertThat(switchExpressionWithPatternMatching(Optional.empty())).isEqualTo("Object Optional.empty");
     }
 
+
+    sealed interface Interface {}
+
+    record Impl1(String value) implements Interface {}
+
+    record Impl2(long value) implements Interface {}
+
+    @Test
+    public void testSwitchRecordPatternMatching() {
+        Assertions.assertThat(switchExpressionWithRecordPatternMatching(new Impl1("Hi Impl1"))).isEqualTo("Hi Impl1");
+        Assertions.assertThat(switchExpressionWithRecordPatternMatching(new Impl2(44))).isEqualTo("44");
+        Assertions.assertThat(switchExpressionWithRecordPatternMatching(null)).isEqualTo("null");
+    }
+
+    private String switchExpressionWithRecordPatternMatching(Interface obj) {
+        return switch (obj) {
+            case null -> "null";
+            case Impl1(String value) -> value;
+            case Impl2(long value) -> Long.toString(value);
+        };
+    }
 }
