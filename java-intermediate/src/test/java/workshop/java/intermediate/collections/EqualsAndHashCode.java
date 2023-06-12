@@ -1,7 +1,7 @@
 package workshop.java.intermediate.collections;
 
 import lombok.AllArgsConstructor;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import workshop.java.intermediate.boilerplatefree.Person;
 
 import java.util.*;

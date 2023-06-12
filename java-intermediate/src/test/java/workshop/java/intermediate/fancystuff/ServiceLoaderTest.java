@@ -1,8 +1,6 @@
 package workshop.java.intermediate.fancystuff;
 
-import org.junit.Test;
-
-import java.util.ServiceLoader;
+import org.junit.jupiter.api.Test;
 
 public class ServiceLoaderTest {
 

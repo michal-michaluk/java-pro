@@ -1,7 +1,7 @@
 package workshop.java.intermediate.collectionsprocessing;
 
 import lombok.*;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 import workshop.java.intermediate.boilerplatefree.ExampleMovies;
 import workshop.java.intermediate.boilerplatefree.Movie;
 import workshop.java.intermediate.boilerplatefree.Person;

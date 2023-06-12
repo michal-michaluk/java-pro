@@ -1,6 +1,6 @@
 package workshop.java.intermediate.almostlikefunctional;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.time.LocalDate;
 import java.util.Arrays;

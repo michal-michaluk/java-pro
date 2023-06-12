@@ -1,6 +1,6 @@
 package workshop.java.intermediate.concurrency;
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.*;
 import java.util.concurrent.*;

@@ -1,7 +1,7 @@
 package workshop.java.intermediate.datetime;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.time.*;
 import java.time.temporal.ChronoField;
@@ -192,7 +192,7 @@ public class TimeTest {
     }
 
     @Test
-    @Ignore("damn, why it fails?")
+    @Disabled("damn, why it fails?")
     public void durationBetweenTimes() throws Exception {
         LocalTime now = LocalTime.now();
         long until = someTime.until(now, ChronoUnit.SECONDS);

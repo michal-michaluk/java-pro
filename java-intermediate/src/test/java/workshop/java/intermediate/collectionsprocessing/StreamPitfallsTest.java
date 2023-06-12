@@ -1,7 +1,7 @@
 package workshop.java.intermediate.collectionsprocessing;
 
-import org.junit.Ignore;
-import org.junit.Test;
+import org.junit.jupiter.api.Disabled;
+import org.junit.jupiter.api.Test;
 
 import java.io.File;
 import java.nio.file.Files;
@@ -37,7 +37,7 @@ public class StreamPitfallsTest {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void infiniteStreams() throws Exception {
         // Will run indefinitely
         IntStream.iterate(0, i -> i + 1)
@@ -46,7 +46,7 @@ public class StreamPitfallsTest {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void subtleInfiniteStreams() throws Exception {
         IntStream.iterate(0, i -> (i + 1) % 2)
                 .distinct()
@@ -56,7 +56,7 @@ public class StreamPitfallsTest {
     }
 
     @Test
-    @Ignore
+    @Disabled
     public void parallelInfiniteStreams() throws Exception {
         IntStream.iterate(0, i -> (i + 1) % 2)
                 .parallel()

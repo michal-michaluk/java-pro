@@ -1,7 +1,7 @@
 package workshop.java.intermediate.collectionsprocessing;
 
 
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
